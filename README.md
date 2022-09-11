@@ -1,2 +1,0 @@
-# virtuamon.com
-virtuamon.com
