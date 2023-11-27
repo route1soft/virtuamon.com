@@ -11,7 +11,8 @@ html {
   font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-html, body {
+html,
+body {
   height: 100%;
   width: 100%;
   margin: 0;
@@ -19,7 +20,7 @@ html, body {
 }
 
 body {
-  background: center center repeat url(bg.jpg) #000;
+  background: center center repeat url(bg2.png) #000;
   background-size: cover;
 }
 
@@ -32,20 +33,31 @@ body {
   mix-blend-mode: normal;
   transition: all 0.2s ease-in-out;
   filter: drop-shadow(0 0 1rem cyan);
+  cursor: pointer;
 }
 
 .logo.vivid {
-  filter: drop-shadow(0 0 1rem cyan) saturate(1.2) contrast(1.5) hue-rotate(-20deg);
+  filter: drop-shadow(0 0 1rem cyan) saturate(1.2) contrast(1.5)
+    hue-rotate(-20deg);
 }
 
 .main {
   transition: all 0.2s ease-in-out;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .main:hover {
-  background: rgba(0, 0, 0, 0.2);
-  backdrop-filter: blur(2px);
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(3px);
 }
 
 .main:hover .logo {
